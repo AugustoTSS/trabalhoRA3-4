@@ -41,7 +41,7 @@ public class CSVUtils {
     public static Registro[] generateSeedBasedNumbers(long seed, int quantity) {
         Registro[] registros = new Registro[quantity];
         for (int i = 0; i < quantity; i++) {
-            int codigo = (int) (seed + i * 12) % 10000; // Exemplo simples de geração
+            int codigo = (int) (seed + i * 22) % 10000; // Exemplo simples de geração
             int hash = codigo % 1000;  // Apenas um exemplo de cálculo de hash
             registros[i] = new Registro(codigo, hash);
         }
